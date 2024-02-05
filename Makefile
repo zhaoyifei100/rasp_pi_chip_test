@@ -1,6 +1,6 @@
 
 config_boot:
-	~/rasp_pi_chip_test/shell/boot_config.sh
+	sudo bash ~/rasp_pi_chip_test/shell/boot_config.sh
 do_update:
 	~/rasp_pi_chip_test/shell/update_pi.sh
 
