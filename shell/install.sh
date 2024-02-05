@@ -48,19 +48,18 @@ else
 fi
 
 #install python GPIB before linux-gpib!
-#sudo apt -y install python3 python3-pip python3-venv nodejs
-#sudo apt-get -y install python3-smbus
-
 #yfzhao, switch to raspberry lib
-sudo apt install -y python3-pyvisa
+sudo apt -y install python3 python3-pip python3-venv nodejs
+sudo apt-get -y install python3-smbus python3-pyvisa
+
 
 
 #build venv, yfz
 cd ~
-python3 -m venv venv
+#python3 -m venv venv
 #~/venv/bin/python3 -m pip install jupyter
-~/venv/bin/python3 -m pip install pyvisa pyvisa-py scipy openpyxl pandas xlrd pyserial pyusb
-~/venv/bin/python3 -m pip install matplotlib ipympl
+#~/venv/bin/python3 -m pip install pyvisa pyvisa-py scipy openpyxl pandas xlrd pyserial pyusb
+#~/venv/bin/python3 -m pip install matplotlib ipympl
 
 #install Redis
 #sudo apt-get -y install redis-server
