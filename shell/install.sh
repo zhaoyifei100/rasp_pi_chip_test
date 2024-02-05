@@ -48,8 +48,11 @@ else
 fi
 
 #install python GPIB before linux-gpib!
-sudo apt -y install python3 python3-pip python3-venv nodejs
-sudo apt-get -y install python3-smbus
+#sudo apt -y install python3 python3-pip python3-venv nodejs
+#sudo apt-get -y install python3-smbus
+
+#yfzhao, switch to raspberry lib
+sudo apt install -y python3-pyvisa
 
 
 #build venv, yfz
