@@ -35,10 +35,16 @@ sudo apt-get -y install tmux mc
 
 
 #before we go on: check if subversion is really installed. That was sometimes a problem in the past
-if ! command -v svn &> /dev/null
-then
-    echo "subversion failed to install!"
-    exit
+#if ! command -v svn &> /dev/null
+#then
+#    echo "subversion failed to install!"
+#    exit
+#fi
+if command -v svn >/dev/null 2>&1; then
+    echo "Subversion is already installed."
+else
+    echo "Subversion is not installed."
+	exit
 fi
 
 #install python GPIB before linux-gpib!
